@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax JKT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data.js">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Paralax JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js/parallax.js-1.5.0/parallax.js"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Add these lines to include Swiper CSS and JS files -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="parallax-window" data-parallax="scroll" data-image-src="img/simpang-semanggi.webp">
+        <nav>
+            <!-- script untuk nav -->
+            <script>
+                window.addEventListener('scroll', function () {
+                    var nav = document.querySelector('nav');
+                    var logojkt = document.querySelector('.logojkt');
+                    var btnSignUp = document.querySelector('.btn-sign-up')
+
+                    if (window.scrollY > 0) {
+                        nav.classList.add('sticky');
+                        logojkt.setAttribute('src', 'img/jakarta-logo-putih.webp')
+                        btnSignUp.classList.add('scroll')
+                    } else {
+                        nav.classList.remove('sticky');
+                        logojkt.removeAttribute('src', 'img/jakarta-logo-putih.webp')
+                        logojkt.setAttribute('src', 'img/jakarta-logo-putih.webp')
+                        btnSignUp.classList.remove('scroll')
+                    }
+                });
+            </script>
+
+            <!-- logo jakarta -->
+            <div class="logo">
+                <a class="linklogojkt" href="index.html"><img class="logojkt" src="img/jakarta-logo-putih.webp"
+                        alt=""></a>
+            </div>
+            <!-- button sign up -->
+            <a href="sign.html" class="btn-sign-up">Sign Up</a>
+        </nav>
+
+        <div class="header-title text-putih">Jakarta</div> </span>
+        <div class="header-bottom">
+            <p class="today-date " id="tanggal"></p>
+            <script>
+                var now = new Date();
+                var tanggal = now.getDate();
+                var bulan = now.getMonth() + 1;
+                var tahun = now.getFullYear();
+                document.getElementById("tanggal").innerHTML = tanggal + " / " + bulan + " / " + tahun;
+            </script>
+            <ul class="social-media">
+                <div class="icons_container">
+                    <div class="icon facebook">
+                        <div class="tooltip">
+                            Facebook
+                        </div>
+                        <a href="https://www.facebook.com/DKIJakarta"><span><i class="fab fa-facebook-f"></i></span></a>
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip">
+                            Twitter
+                        </div>
+                        <a href="https://twitter.com/DKIJakarta"><span><i class="fab fa-twitter"></i></span></a>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip">
+                            Instagram
+                        </div>
+                        <a href="https://www.instagram.com/dkijakarta/"><span><i
+                                    class="fab fa-instagram"></i></span></a>
+                    </div>
+                    <div class="icon youtube">
+                        <div class="tooltip">
+                            YouTube
+                        </div>
+                        <a href="https://www.youtube.com/@DKIJakarta/"><span><i class="fab fa-youtube"></i></span></a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-info">
+                <h1 style="font-size: 2rem;">Sukses Jakarta untuk Indonesia</h1> <br>
+                <p style="font-size: 1.1rem;"> Kehidupan perkotaan yang semarak dengan berbagai keragaman, dari warisan
+                    budaya hingga destinasi kelas dunia yang menyenangkan. Selamat datang!</p>
+            </div>
+            <div class="image-gallery">
+                <div class="image-box image-heru">
+                    <img src="img/heru-budi.webp" alt="heruBudi">
+                </div>
+            </div>
+            <div class="about-info">
+                <p> Heru Budi Hartono, S.E., M.M. (lahir 13 Desember 1965) adalah birokrat Indonesia yang menjadi
+                    Penjabat Gubernur DKI Jakarta sejak 2022 dan Kepala Sekretariat Kepresidenan sejak 2017. Dia adalah
+                    mantan Kepala Badan Pengelola Keuangan Aset Daerah DKI Jakarta masa Gubernur Basuki Tjahaja Purnama
+                    antara tahun 2015 dan 2017. Mantan Wali Kota Jakarta Utara ini sempat ditunjuk oleh Gubernur Basuki
+                    untuk menjadi bakal calon wakil gubernur pada Pilkada DKI Jakarta tahun 2017 andai saja jadi maju
+                    melalui jalur independen. Ia menjadi Penjabat Gubernur DKI Jakarta menggantikan Anies Baswedan yang
+                    habis masa jabatannya sejak 17 Oktober 2022. </p> <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- container 2 -->
+    <header class="parallax-window header2" data-parallax="scroll" data-image-src="img/bundaran-HI.webp">
+        </script>
+        <!-- <div class="header-title text-putih">Jakarta</div> </span> -->
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-container">
+            <div class="image-gallery">
+                <div class="image-box">
+                    <img src="img/monas.webp" alt="kota-tua">
+                    <h2 class="jkt">J</h2>
+                </div>
+                <div class="image-box">
+                    <img src="img/kota-tua.webp" alt="kota-tua">
+                    <h2 class="jkt">K</h2>
+                </div>
+                <div class="image-box">
+                    <img src="img/tmii.webp" alt="kota-tua">
+                    <h2 class="jkt">T</h2>
+                </div>
+            </div>
+            <div class="about-info">
+                <p> Jakarta, sebagai ibukota Indonesia, adalah kota yang memadukan keindahan alam dan pemandangan
+                    modern. Ada banyak tempat wisata yang menarik untuk dikunjungi di Jakarta. Salah satu tempat wisata
+                    yang populer adalah Monumen Nasional (Monas), yang merupakan simbol kemerdekaan Indonesia. Di sana,
+                    wisatawan dapat menikmati pemandangan kota Jakarta dari ketinggian. <br> <br>
+                    Selain Monas, ada banyak tempat wisata lain di Jakarta yang patut dikunjungi, seperti Taman Mini
+                    Indonesia Indah, Ancol Dreamland, dan Pulau Seribu. Taman Mini Indonesia Indah adalah taman tema
+                    yang menampilkan kebudayaan dan keindahan alam Indonesia dalam skala miniatur. Ancol Dreamland
+                    adalah taman rekreasi besar yang menawarkan berbagai atraksi, seperti pantai, taman bermain air, dan
+                    taman hiburan. <br> <br>
+
+                    Pulau Seribu, juga dikenal sebagai Kepulauan Seribu, adalah gugusan pulau yang terletak di lepas
+                    pantai Jakarta. Di sana, wisatawan dapat menikmati keindahan pantai, laut, dan berbagai kegiatan
+                    air, seperti snorkeling, selam, dan berlayar. <br> <br>
+
+                    Selain menjadi destinasi wisata yang menarik, Jakarta juga memiliki perekonomian yang kuat. Sebagai
+                    pusat bisnis dan perdagangan, Jakarta menawarkan peluang bisnis dan investasi yang besar. Banyak
+                    perusahaan besar dan perusahaan multinasional memiliki kantor di Jakarta, sehingga menciptakan
+                    lapangan kerja dan meningkatkan pertumbuhan ekonomi. <br> <br>
+
+                    Jakarta juga merupakan pusat keuangan Indonesia, dengan banyak bank dan lembaga keuangan terkemuka
+                    yang berbasis di kota ini. Ada juga banyak pusat perbelanjaan yang modern dan pasar tradisional yang
+                    menawarkan berbagai produk lokal dan internasional. <br> <br>
+
+                    Dalam hal transportasi, Jakarta juga memiliki fasilitas yang modern dan efisien, seperti jaringan
+                    kereta api, jalan tol, dan layanan transportasi online. Hal ini memudahkan orang untuk bergerak di
+                    sekitar kota dan meningkatkan produktivitas dalam berbisnis. <br> <br>
+
+                    Secara keseluruhan, Jakarta memiliki keindahan yang unik dan menawarkan berbagai destinasi wisata
+                    menarik. Selain itu, Jakarta juga memiliki perekonomian yang kuat dan modern, yang membuatnya
+                    menjadi salah satu kota terkemuka di Asia Tenggara. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOTTIE -->
+    <lottie-player class="burung-hantu" src="https://assets9.lottiefiles.com/packages/lf20_PBgNop.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+    </lottie-player>
+
+    <!-- CARD SLIDER - DESTINASI DAN ATRAKSI -->
+    <div class="card-wrapper swiper">
+        <div class="slide-content"></div>
+        <div class="container-card">
+
+            <div class="about-info">
+                <h1 style="font-size: 2rem; margin-top: 2rem;">Destinasi dan Atraksi</h1> <br>
+                <!-- LOTTIE -->
+                <lottie-player class="location" src="img/location.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </lottie-player>
+
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;"> Kami menyediakan keindahan, keragaman dan
+                    kenyamanan di
+                    Jakarta.
+                </p>
+            </div>
+
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/akomodasi.webp" alt="akomodasi" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Akomodasi</h2>
+                            <p class="description">Berbagai jenis akomodasi dapat ditemui di Jakarta, dari hotel
+                                berbintang hingga penginapan yang menawarkan pengalaman hidup laiknya warga
+                                biasa Ibu
+                                Kota.</p>
+
+                            <a href="https://www.jakarta.go.id/akomodasi"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/pusat-perbelanjaan.webp" alt="pusatBelanja" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Pusat Perbelanjaan</h2>
+                            <p class="description">Jakarta menyajikan berbagai kebutuhan warga dengan harga yang
+                                beraneka. Terlebih lagi, Jakarta terkenal dengan lokasi-lokasi belanja yang
+                                lengkap dan
+                                beragam.</p>
+
+                            <a href="https://www.jakarta.go.id/pusat-perbelanjaan"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/kebudayaan.webp" alt="budayaBetawi" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Kebudayaan Betawi</h2>
+                            <p class="description">Jakarta menyajikan berbagai kebutuhan warga dengan harga yang
+                                beraneka. Terlebih lagi, Jakarta terkenal dengan lokasi-lokasi belanja yang
+                                lengkap dan
+                                beragam.</p>
+
+                            <a href="https://www.jakarta.go.id/pusat-kebudayaan-jakarta"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/museum.webp" alt="museum" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Museum</h2>
+                            <p class="description">Kehidupan kita kini adalah karena masa lalu, sedangkan masa
+                                datang
+                                merupakan kita hari ini. Begitu kata orang bijak yang menggambarkan betapa
+                                penting
+                                sejarah.</p>
+
+                            <a href="https://www.jakarta.go.id/museum"><button class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/galeri.webp" alt="galeri" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Galeri</h2>
+                            <p class="description">Berdasarkan Kamus Besar Bahasa Indonesia (KBBI), pengertian
+                                galeri
+                                adalah ruangan atau gedung yang digunakan sebagai tempat memamerkan benda, karya
+                                seni,
+                                dan sebagainya.</p>
+
+                            <a href="https://www.jakarta.go.id/galeri"><button class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/kuliner.webp" alt="kuliner" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Wisata Kuliner</h2>
+                            <p class="description">Sebagai kota yang memiliki latar belakang penduduk beragam,
+                                Jakarta
+                                juga mempunyai kekayaan kuliner beraneka. Dari yang harganya aman buat kantong,
+                                hingga
+                                yang budget-nya kelas hotel berbintang lima, tersaji di Ibu Kota</p>
+
+                            <a href="https://www.jakarta.go.id/wisata-kuliner-jakarta"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/wisata-bersejarah.webp" alt="wisataBersejarah" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Wisata Bersejarah</h2>
+                            <p class="description">Jakarta memiliki banyak tempat bersejarah yang menarik untuk
+                                dikunjungi. Pengunjung dapat menikmati objek wisata di Jakarta sekaligus
+                                menyelami masa
+                                silam bangunan bersejarah di ibu kota.</p>
+
+                            <a href="https://www.jakarta.go.id/wisata-bersejarah"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/kepulauan-seribu.webp" alt="pulasuSeribu" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Kepulauan Seribu</h2>
+                            <p class="description">Di Kepulauan Seribu, kita akan menemukan berbagai macam
+                                penduduk
+                                multi etnis dari berbagai latar belakang agama, adat istiadat, seni budaya,
+                                serta
+                                keindahan alam laut.</p>
+
+                            <a href="https://www.jakarta.go.id/kepulauan-seribu"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/rekreasi.webp" alt="rekreasi" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Tempat Rekreasi </h2>
+                            <p class="description">Jakarta memiliki banyak tempat rekreasi dan taman bermain
+                                bagi
+                                warganya atau siapa saja yang sedang berkunjung ke ibu kota. Kita tidak akan
+                                kehabisan
+                                wahana untuk bersenang-senang.</p>
+
+                            <a href="https://www.jakarta.go.id/taman-rekreasi-dan-taman-bermain"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/taman.webp" alt="tamanKota" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Taman Kota </h2>
+                            <p class="description">Dalam rangka membangun infrastruktur publik bagi warga ibu
+                                kota,
+                                Pemerintah Provinsi DKI Jakarta membangun ruang-ruang publik berupa Taman Kota,
+                                RPTRA,
+                                serta Hutan Kota.</p>
+
+                            <a href="https://www.jakarta.go.id/taman-kota"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/hiburan.webp" alt="hiburan" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Hiburan </h2>
+                            <p class="description">Jakarta punya berbagai acara menarik dan meriah untuk semua
+                                orang.
+                                Jakarta selalu punya agenda paling seru dan menyenangkan yang tidak akan membuat
+                                Anda
+                                bosan.</p>
+
+                            <a href="https://www.jakarta.go.id/acara-dan-hiburan"><button
+                                    class="button">Selengkapnya</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pag ination"></div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Copyright &copy; 2023 by <a class="ranggabiner" href="http://instagam.com/ranggabiner">@ranggabiner </a> <i
+                class="fa fa-heart"></i></p>
+    </footer>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Script Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+
+
+
+</html>
